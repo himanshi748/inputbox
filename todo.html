@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toto List</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+	<div id="main" onclick="task()" >
+	<h1 id="head"><b> Tasks </b> List</h1>
+	<div id="additem">
+
+	<span id="add"  class="material-icons">add_circle</span>
+	<span>Add Item</span>
+	</div>
+	<p>No Items in the todo list</p>
+</div>
+	<!--  popup part -->
+	<div id="addlist">
+   <label for="add">Add New Task</label>
+   <br>
+   <input id="input" type="text" placeholder="Add New List" value="" name="add">
+   <br>
+   <br>
+   <span>
+         <button id="button1" onclick="addlist()">Add</button></a>
+   <button id="button2">Close</button>
+   </span>
+  
+</div>
+<div id="display">
+	
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>
